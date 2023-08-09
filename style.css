@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #251762;
+    overflow-x: hidden;
+}
+
+.svg1 {
+    position: absolute;
+    top: 200px;
+    left: -100px;
+    width: 2000px;
+    transform: rotate(20deg);
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.svg2 {
+    position: absolute;
+    top: 250px;
+    left: -300px;
+    width: 2000px;
+    transform: rotate(-10deg);
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.svg3 {
+    position: absolute;
+    top: 650px;
+    left: -300px;
+    width: 2000px;
+    transform: rotate(30deg);
+    z-index: -1;
+    filter: blur(5px); 
+}
+
+header {
+    margin: 5vh 7vw;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.logo {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #f9d2bf;
+    text-decoration: none;
+}
+
+.nav-item {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #f9d2bf;
+    padding: 3px 15px;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    transition: 0.5s;
+}
+
+nav img {
+    display: none;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+nav img:hover {
+    background-color: #ed3f38;
+    box-shadow: #ffffff60 -3px -3px 10px, #ffffff60 3px 3px 10px;
+}
+
+
+.nav-item:hover {
+    background-color: #ed3f38;
+    box-shadow: #ffffff60 -3px -3px 10px, #ffffff60 3px 3px 10px;
+}
+
+h1 {
+    color: #f9d2bf;
+    font-family: 'Unbounded', cursive;
+    margin-top: 20vh;
+    max-width: 700px;
+    font-size: clamp(24px, 7vw, 60px);
+    padding: 5px;
+    text-shadow: #ed3f38 5px 5px 2px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.header-container p {
+    color: #f9d2bf;
+    padding-left: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    width: 50%;
+    min-width: 50vw;
+}
+
+.header-container button {
+    margin-left: 5px;
+    margin-right: 30px;
+    background-color: #ed3f38;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 2vw, 32px);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.header-container button:hover {
+    box-shadow: #ffffff60 -3px -3px 10px, #ffffff60 3px 3px 10px;
+}
+
+main {
+    margin: 5vh 7vw;
+}
+
+main h2 {
+    text-align: center;
+    font-size: clamp(24px, 7vw, 40px);
+    color: #f9d2bf;
+    font-family: 'Unbounded', cursive;
+    text-shadow: #ed3f38 5px 5px 2px;
+    margin: 150px 0 75px 5px;
+}
+
+.main-container {
+    margin-left: 5px;
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+}
+
+.main-container-item {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    background-color: #f9d2bf;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.main-container-item h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #251762;
+}
+
+.main-container-item p {
+    font-family: 'Nunito', sans-serif;
+    color: #251762;
+}
+
+.main-container-item button {
+    padding: 10px;
+    background-color: #ed3f38;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 2vw, 32px);
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.main-container-item button:hover {
+    color: #251762;
+    background-color: #ffffff;
+}
+
+@media  (max-width: 500px) {
+    main h2 {
+        text-align: left;
+    }
+ 
+    .nav-item {
+        display: none;
+    }
+
+    nav img {
+        display: inline;
+        width: 20px;
+    }
+
+    .header-container p {
+        width: 100%;
+    }
+
+    .header-container button {
+        margin: auto;
+    }
+
+    .main-container-item {
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    main h2 {
+        margin-top: 75px;
+    }
+}
